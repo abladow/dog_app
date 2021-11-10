@@ -1,0 +1,5 @@
+- name: Build docker
+  run: | 
+    echo ---Building and starting up docker---
+    docker-compose -f ./<REPO_NAME>/docker-compose.test.yml -p testing up -d
+    echo ---Containers up---
